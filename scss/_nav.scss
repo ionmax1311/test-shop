@@ -1,0 +1,114 @@
+@import 'mixins';
+@import 'variables';
+
+.nav {
+  height: 64px;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    .logo {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      top: 50%;
+    }
+    .right {
+      @include flex-center;
+
+      .cart {
+        padding-left: 30px;
+        position: relative;
+
+        & a {
+          @include flex-center;
+        }
+        & p {
+          font-size: 14px;
+          color: rgba(0, 0, 0, 0.5);
+          padding-left: 14px;
+          transition: 0.4s;
+        }
+        &:hover p {
+          color: #000;
+        }
+        .count {
+          position: absolute;
+          background: #9f2628;
+          top: -1px;
+          right: 57px;
+          border-radius: 50%;
+          color: #fff;
+          font-size: 10px;
+          padding: 3px;
+          width: 20px;
+          height: 20px;
+          text-align: center;
+          cursor: pointer;
+          transition: 0.4s;
+          &:hover p {
+            color: #000;
+          }
+        }
+      }
+
+      .account {
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.5);
+        border: 2px dashed rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+        width: 120px;
+        height: 32px;
+        @include flex-center;
+        display: flex;
+        justify-content: center;
+        transition: 0.4s;
+        margin-left: 40px;
+
+        &:hover {
+          color: #000;
+        }
+      }
+      .social {
+        @include flex-center;
+        padding-left: 41px;
+        &-item {
+          padding-left: 17px;
+          &:first-child {
+            padding-left: 0;
+          }
+        }
+      }
+    }
+    .menu {
+      display: flex;
+      .menu-item {
+        padding-right: 38px;
+        line-height: 38px;
+      }
+      .menu-item a {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+
+        color: rgba(0, 0, 0, 0.5);
+        transition: 0.4s;
+
+        &:hover {
+          color: #000;
+        }
+
+        &__lang {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 16px;
+          color: rgba(0, 0, 0, 0.5);
+        }
+      }
+    }
+  }
+}

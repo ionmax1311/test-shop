@@ -1,0 +1,84 @@
+@import 'mixins';
+@import 'variables';
+
+.subscribe {
+  background: #f5f5f5;
+  padding: 58px 0;
+
+  &-title {
+    @include title-section;
+    padding-bottom: 17px;
+  }
+  &-subtitle {
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #525252;
+  }
+  &-wrap-input {
+    position: relative;
+  }
+  &-form {
+    padding: 42px 0 20px;
+    display: flex;
+    justify-content: space-between;
+    &__input {
+      font-size: 18px;
+      line-height: 25px;
+      color: #000;
+      padding: 8px 0 7px 12px;
+      width: 310px;
+      border: 2px solid transparent;
+      outline: none;
+      transition: 0.4s;
+      &::placeholder {
+        color: rgba(0, 0, 0, 0.5);
+      }
+      &:focus,
+      &:hover,
+      &:visited {
+        border: 2px dashed #000;
+      }
+    }
+    &__require {
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+      color: rgba(0, 0, 0, 0.5);
+    }
+    &__button {
+      width: 310px;
+      height: 44px;
+      background: $color-button;
+      color: #fff;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 21px;
+      cursor: pointer;
+      align-items: center;
+      text-align: center;
+      border: none;
+      transition: 0.4s;
+      &:hover {
+        background: lighten($color-button, 25%);
+      }
+    }
+  }
+}
+
+.subscribe-form__input.valid {
+  border: 2px dashed #000;
+}
+
+.subscribe-form__input.error {
+  border-color: red;
+}
+
+label {
+  display: none;
+  font-size: 0;
+}
+
+.active {
+  border: 2px dashed #000;
+}

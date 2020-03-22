@@ -1,0 +1,71 @@
+@import 'mixins';
+@import 'variables';
+
+.news {
+  background: #fff;
+  padding: 58px 0;
+  &-container {
+    max-width: 1317px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  &-title {
+    @include title-section;
+    &__container {
+      position: relative;
+      max-width: 1300px;
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+  &-link-all {
+    @include see-all-link;
+    transition: 0.4s;
+    &:hover {
+      color: #000;
+    }
+  }
+  &-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-item {
+    display: flex;
+    max-width: 640px;
+    transition: 0.4s;
+    &__title {
+      font-size: 16px;
+    }
+    &:hover {
+      cursor: pointer;
+      box-shadow: $hover-product-item;
+    }
+  }
+  &-content {
+    padding: 12px 10px 15px 10px;
+  }
+  &-data {
+    font-size: 12px;
+    color: #000;
+    padding-bottom: 20px;
+  }
+  &-item-title {
+    font-size: 16px;
+  }
+  &-text {
+    font-size: 14px;
+    padding: 5px 0 10px 0;
+  }
+  &-link {
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
+    border-bottom: 1px solid transparent;
+    border-bottom-color: #000;
+    transition: 0.4s;
+    &:hover {
+      color: lighten(#000, 25%);
+      border-bottom-color: transparent;
+    }
+  }
+}

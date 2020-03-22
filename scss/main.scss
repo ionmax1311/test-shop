@@ -1,0 +1,35 @@
+@import 'mixins';
+@import 'variables';
+@import 'nav';
+@import 'hero';
+@import 'advantages';
+@import 'top';
+@import 'product-slider';
+@import 'product';
+@import 'rating';
+@import 'new';
+@import 'news';
+@import 'subscribe';
+@import 'footer';
+
+@import '../node_modules/@fortawesome/fontawesome-free/scss/solid.scss';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+}
+
+.container {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+}

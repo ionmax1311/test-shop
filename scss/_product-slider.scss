@@ -1,0 +1,31 @@
+@import 'mixins';
+@import 'variables';
+
+@import '../node_modules/font-awesome/scss/font-awesome.scss';
+
+.prev-arrow {
+  position: absolute;
+  left: -19px;
+  top: 50%;
+  width: 0;
+  height: 0;
+}
+.next-arrow {
+  right: -13px;
+  position: absolute;
+  top: 50%;
+  width: 0;
+  height: 0;
+}
+
+.fa-chevron-left,
+.fa-chevron-right {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 36px;
+  transition: 0.4s;
+  font-size: 16px;
+  &:hover {
+    color: #000;
+    cursor: pointer;
+  }
+}

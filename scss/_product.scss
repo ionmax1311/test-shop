@@ -1,0 +1,132 @@
+@import 'mixins';
+@import 'variables';
+
+.product-item {
+  width: 310px !important;
+  background: #fff;
+  position: relative;
+  margin: 10px 10px;
+  transition: 0.4s;
+  cursor: pointer;
+  &:hover {
+    box-shadow: $hover-product-item;
+  }
+
+  &__img-container {
+    position: relative;
+    & p {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      @include flex-center;
+      justify-content: center;
+      text-transform: uppercase;
+      color: #ffffff;
+      background: #8a4e78;
+      border-radius: 5px;
+      width: 121px;
+      height: 24px;
+    }
+    & .new-accent-text {
+      background: #839950;
+    }
+    & .star {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      @include flex-center;
+      justify-content: center;
+      width: 121px;
+      height: 24px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  &__vendor {
+    font-size: 14px;
+    line-height: 16px;
+    color: #000;
+    padding: 10px;
+    & span {
+      font-weight: 700;
+    }
+  }
+  &__title {
+    font-size: 20px;
+    line-height: 23px;
+    color: #000;
+    padding: 0 0 8px 10px;
+  }
+  &__subtitle {
+    font-size: 14px;
+    line-height: 16px;
+    color: #000;
+    padding: 0 0 15px 10px;
+  }
+  &__price {
+    padding: 0 0 10px 10px;
+  }
+  .buy-link__container {
+    position: relative;
+    &:hover .add-hidden {
+      opacity: 1;
+    }
+    .buy-link {
+      width: 310px;
+      height: 50px;
+      background: rgba(0, 0, 0, 0.66);
+      font-size: 18px;
+      line-height: 24px;
+      @include flex-center;
+      justify-content: center;
+      color: #fff;
+      transition: 0.4s;
+    }
+    .add-hidden {
+      display: flex;
+      justify-content: center;
+      width: 310px;
+      height: 50px;
+      background: #000;
+      align-items: center;
+      position: absolute;
+      transition: linear 0.4s;
+      top: 0;
+      opacity: 0;
+
+      &__item {
+        border: 1px solid transparent;
+        margin: 0 5px;
+        border-radius: 50%;
+        transition: 0.4s;
+        padding: 2px;
+        &:hover {
+          border-color: #fff;
+        }
+      }
+    }
+  }
+
+  .add-link {
+    width: 310px;
+    height: 50px;
+    color: rgba(0, 0, 0, 0.66);
+    font-size: 14px;
+    @include flex-center;
+    justify-content: center;
+    transition: 0.4s;
+
+    &:hover {
+      color: #000;
+    }
+  }
+}
