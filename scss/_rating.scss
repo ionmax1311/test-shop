@@ -3,7 +3,7 @@
 
 .rating {
   background: #fff;
-  padding: 58px 0;
+  padding: 63px 0;
   &-container {
     max-width: 1317px;
     width: 100%;
@@ -11,6 +11,7 @@
   }
   &-title {
     @include title-section;
+    padding-bottom: 24px;
     &__container {
       position: relative;
       max-width: 1300px;

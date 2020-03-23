@@ -12,6 +12,12 @@ gulp.task('sass-compile', function() {
     .pipe(gulp.dest('./css/'));
 });
 
+gulp.task('icons', function() {
+  return gulp
+    .src('node_modules/@fortawesome/fontawesome-free/webfonts/*')
+    .pipe(gulp.dest('./webfonts/'));
+});
+
 gulp.task('watch', function() {
-  gulp.watch('./scss/**/*.scss', gulp.series('sass-compile'));
+  gulp.watch('./scss/**/*.scss', gulp.series('sass-compile', 'icons'));
 });

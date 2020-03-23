@@ -13,8 +13,8 @@ $('.hero-slider').slick({
 $('.product-slider').slick({
   slidesToShow: 4,
   slidesToScroll: 1,
-  // autoplay: true,
-  // autoplaySpeed: 2000,
+  autoplay: true,
+  autoplaySpeed: 4000,
   nextArrow: '<i class="fas fa-chevron-left prev-arrow"></i>',
   prevArrow: '<i class="fas fa-chevron-right next-arrow"></i>'
 });

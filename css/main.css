@@ -24,7 +24,7 @@
         .nav .container .right .cart p {
           font-size: 14px;
           color: rgba(0, 0, 0, 0.5);
-          padding-left: 14px;
+          padding-left: 10px;
           transition: 0.4s; }
         .nav .container .right .cart:hover p {
           color: #000; }
@@ -32,7 +32,7 @@
           position: absolute;
           background: #9f2628;
           top: -1px;
-          right: 57px;
+          right: 54px;
           border-radius: 50%;
           color: #fff;
           font-size: 10px;
@@ -72,6 +72,8 @@
       .nav .container .menu .menu-item {
         padding-right: 38px;
         line-height: 38px; }
+        .nav .container .menu .menu-item__lang {
+          padding-right: 5px; }
       .nav .container .menu .menu-item a {
         font-style: normal;
         font-weight: normal;
@@ -95,7 +97,7 @@
     font-size: 56px;
     line-height: 66px;
     color: #fff;
-    padding: 142px 0 72px 60px; }
+    padding: 142px 0 73px 65px; }
   .hero-slider__item {
     background-image: url(../img/hero/hero-bg.png);
     background-position: 0 0;
@@ -108,7 +110,8 @@
     font-size: 24px;
     color: #fff;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    padding-left: 60px; }
+    padding-left: 65px;
+    line-height: 32px; }
   .hero-slider__button {
     width: 320px;
     height: 70px;
@@ -117,11 +120,12 @@
     justify-content: center;
     align-items: center;
     background: #000;
-    margin-left: 60px;
-    margin-top: 49px;
+    margin-left: 65px;
+    margin-top: 51px;
     font-size: 24px;
     position: relative;
-    transition: 0.4s; }
+    transition: 0.4s;
+    font-size: 24px; }
     .hero-slider__button:hover {
       background: #1a1a1a; }
 
@@ -134,7 +138,7 @@
   position: absolute;
   transform: translate(-50%, -50%);
   left: 50%;
-  bottom: 26px;
+  bottom: 20px;
   margin: 0;
   list-style-type: none; }
   .slick-dots li {
@@ -167,7 +171,8 @@
   .advantages-list {
     display: flex;
     justify-content: space-between;
-    margin-top: 37px; }
+    margin-top: 37px;
+    padding: 0 5px; }
   .advantages-item {
     width: 200px; }
   .advantages-desc {
@@ -186,7 +191,7 @@
 
 .top {
   background: #f5f5f5;
-  padding: 58px 0; }
+  padding: 58px 0 50px; }
   .top-container {
     max-width: 1317px;
     width: 100%;
@@ -197,13 +202,13 @@
     font-size: 32px;
     line-height: 37px;
     text-align: center;
-    color: #000;
-    padding-bottom: 35px; }
+    color: #000; }
     .top-title__container {
       position: relative;
       max-width: 1300px;
       width: 100%;
-      margin: 0 auto; }
+      margin: 0 auto;
+      padding-bottom: 30px; }
   .top-link-all {
     font-style: normal;
     font-weight: normal;
@@ -2600,11 +2605,12 @@
       width: 121px;
       height: 24px; }
     .product-item__img-container .new-accent-text {
-      background: #839950; }
+      background: #839950;
+      width: 87px; }
     .product-item__img-container .star {
       position: absolute;
-      top: 10px;
-      right: 10px;
+      top: 7px;
+      right: 2px;
       font-style: normal;
       font-weight: normal;
       font-size: 14px;
@@ -2620,7 +2626,7 @@
     font-size: 14px;
     line-height: 16px;
     color: #000;
-    padding: 10px; }
+    padding: 12px 0 8px 10px; }
     .product-item__vendor span {
       font-weight: 700; }
   .product-item__title {
@@ -2634,7 +2640,8 @@
     color: #000;
     padding: 0 0 15px 10px; }
   .product-item__price {
-    padding: 0 0 10px 10px; }
+    padding: 0 0 10px 10px;
+    letter-spacing: 1px; }
   .product-item .buy-link__container {
     position: relative; }
     .product-item .buy-link__container:hover .add-hidden {
@@ -2677,13 +2684,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: 0.4s; }
+    transition: 0.4s;
+    padding-bottom: 3px; }
     .product-item .add-link:hover {
       color: #000; }
 
 .rating {
   background: #fff;
-  padding: 58px 0; }
+  padding: 63px 0; }
   .rating-container {
     max-width: 1317px;
     width: 100%;
@@ -2695,7 +2703,7 @@
     line-height: 37px;
     text-align: center;
     color: #000;
-    padding-bottom: 35px; }
+    padding-bottom: 24px; }
     .rating-title__container {
       position: relative;
       max-width: 1300px;
@@ -2716,7 +2724,7 @@
 
 .new {
   background: #f5f5f5;
-  padding: 58px 0; }
+  padding: 68px 0 58px; }
   .new-container {
     max-width: 1317px;
     width: 100%;
@@ -2728,7 +2736,7 @@
     line-height: 37px;
     text-align: center;
     color: #000;
-    padding-bottom: 35px; }
+    padding-bottom: 24px; }
     .new-title__container {
       position: relative;
       max-width: 1300px;
@@ -2749,7 +2757,7 @@
 
 .news {
   background: #fff;
-  padding: 58px 0; }
+  padding: 63px 0 91px; }
   .news-container {
     max-width: 1317px;
     width: 100%;
@@ -2761,7 +2769,7 @@
     line-height: 37px;
     text-align: center;
     color: #000;
-    padding-bottom: 35px; }
+    padding-bottom: 31px; }
     .news-title__container {
       position: relative;
       max-width: 1300px;
@@ -2787,12 +2795,13 @@
     max-width: 640px;
     transition: 0.4s; }
     .news-item__title {
-      font-size: 16px; }
+      font-size: 16px;
+      letter-spacing: 1px; }
     .news-item:hover {
       cursor: pointer;
       box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25); }
   .news-content {
-    padding: 12px 10px 15px 10px; }
+    padding: 13px 10px 15px 12px; }
   .news-data {
     font-size: 12px;
     color: #000;
@@ -2801,7 +2810,8 @@
     font-size: 16px; }
   .news-text {
     font-size: 14px;
-    padding: 5px 0 10px 0; }
+    padding: 5px 0 10px 0;
+    line-height: 21px; }
   .news-link {
     font-size: 14px;
     color: #000;
@@ -2815,7 +2825,7 @@
 
 .subscribe {
   background: #f5f5f5;
-  padding: 58px 0; }
+  padding: 64px 0 49px; }
   .subscribe-title {
     font-style: normal;
     font-weight: normal;
@@ -2823,8 +2833,7 @@
     line-height: 37px;
     text-align: center;
     color: #000;
-    padding-bottom: 35px;
-    padding-bottom: 17px; }
+    padding-bottom: 20px; }
   .subscribe-subtitle {
     font-size: 18px;
     line-height: 25px;
@@ -2844,7 +2853,8 @@
       width: 310px;
       border: 2px solid transparent;
       outline: none;
-      transition: 0.4s; }
+      transition: 0.4s;
+      letter-spacing: 0.5px; }
       .subscribe-form__input::placeholder {
         color: rgba(0, 0, 0, 0.5); }
       .subscribe-form__input:focus, .subscribe-form__input:hover, .subscribe-form__input:visited {
@@ -2860,7 +2870,7 @@
       background: #000;
       color: #fff;
       font-weight: bold;
-      font-size: 18px;
+      font-size: 16px;
       line-height: 21px;
       cursor: pointer;
       align-items: center;
@@ -2897,12 +2907,17 @@ label {
     justify-content: space-between; }
   .footer-item {
     width: 310px; }
+    .footer-item:nth-child(2), .footer-item:nth-child(3) {
+      margin-left: 11px; }
+    .footer-item:nth-child(4) {
+      margin-left: 7px; }
   .footer-title {
     color: #c4c4c4;
     text-transform: uppercase;
-    padding-bottom: 20px;
+    padding-bottom: 19px;
     transition: 0.4s;
-    display: block; }
+    display: block;
+    font-size: 14px; }
     .footer-title:hover {
       color: #fff; }
   .footer-list {
@@ -2911,23 +2926,23 @@ label {
     .footer-list__item {
       color: #c4c4c4;
       font-size: 14px;
-      line-height: 17px;
+      line-height: 16px;
       transition: 0.4s; }
       .footer-list__item:hover {
         color: #fff; }
   .footer-language {
-    padding-bottom: 20px; }
+    padding-bottom: 23px; }
     .footer-language a {
       font-size: 14px;
       color: #c4c4c4;
       transition: 0.4s;
-      padding-right: 6px; }
+      padding-right: 4px; }
       .footer-language a:hover {
         color: #fff; }
   .footer-social {
     display: flex; }
     .footer-social__item {
-      padding-right: 20px; }
+      padding-right: 18px; }
 
 /*!
  * Font Awesome Free 5.12.1 by @fontawesome - https://fontawesome.com

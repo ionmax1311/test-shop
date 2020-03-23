@@ -29,7 +29,7 @@
         & p {
           font-size: 14px;
           color: rgba(0, 0, 0, 0.5);
-          padding-left: 14px;
+          padding-left: 10px;
           transition: 0.4s;
         }
         &:hover p {
@@ -39,7 +39,7 @@
           position: absolute;
           background: #9f2628;
           top: -1px;
-          right: 57px;
+          right: 54px;
           border-radius: 50%;
           color: #fff;
           font-size: 10px;
@@ -88,6 +88,9 @@
       .menu-item {
         padding-right: 38px;
         line-height: 38px;
+        &__lang {
+          padding-right: 5px;
+        }
       }
       .menu-item a {
         font-style: normal;

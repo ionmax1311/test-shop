@@ -3,7 +3,7 @@
 
 .new {
   background: #f5f5f5;
-  padding: 58px 0;
+  padding: 68px 0 58px;
   &-container {
     max-width: 1317px;
     width: 100%;
@@ -11,6 +11,7 @@
   }
   &-title {
     @include title-section;
+    padding-bottom: 24px;
     &__container {
       position: relative;
       max-width: 1300px;
